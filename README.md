@@ -18,6 +18,8 @@ We built this Llama Hindi Tokenizer by combining the AI4Bharat corpus with the L
 5) Output: Sequence of tokens
 
 # How to use this Tokeniser
+1) Download `special_tokens_map.json`, `tokenizer.model` and `tokenizer_config.json` to a folder.
+2) Create your Notebook in the parent directory and use this code below to use the tokeniser to finetune a new Llama 2 model using a dataset or something else
 ```python
 from transformers import LlamaForCausalLM, LlamaTokenizer
 
