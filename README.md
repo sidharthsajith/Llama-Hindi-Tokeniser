@@ -4,9 +4,6 @@ A tokenizer is a software component that breaks down text into smaller units cal
 ### How does a Tokenizer work?
 A tokenizer typically works by applying a set of rules to the input text.
 
-### BPE Tokenizer
-BPE (Byte Pair Encoding) is a type of tokenizer that is particularly well-suited for languages with complex scripts, such as Hindi.
-
 ### How did you build this Llama Hindi Tokenizer?
 We built this Llama Hindi Tokenizer by combining the AI4Bharat corpus with the Llama 2 32k Tokenizer.
 
