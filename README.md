@@ -19,7 +19,7 @@ We built this Llama Hindi Tokenizer by combining the AI4Bharat corpus with the L
 
 # How to use this Tokeniser
 1) Download `special_tokens_map.json`, `tokenizer.model` and `tokenizer_config.json` to a folder.
-2) Create your Notebook in the parent directory and use this code below to use the tokeniser to finetune a new Llama 2 model using a dataset or something else
+2) Create your Notebook in the parent directory and use this code below to use the tokeniser
 ```python
 from transformers import LlamaForCausalLM, LlamaTokenizer
 
@@ -27,3 +27,4 @@ tokenizer = LlamaTokenizer.from_pretrained("Path_to_the_downloaded_tokeniser_fol
 model = LlamaForCausalLM.from_pretrained("meta-llama/Llama-2-7b-hf")
 
 ```
+3) Further using this tokeniser and the base Llama 2 model, a new Hindi+English LLM can be created by curating an instruction dataset in Hindi and finetuning the base model.
